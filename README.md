@@ -32,6 +32,7 @@ _This will allow users to order, then calculate costs of their custom order_
 * _Clone from the Github Repository https://github.com/lenjha/pizza-order.git_
 * _Open the directory_
 * _Click upon index.html within the directory_
+* _Or use https://lenjha.github.io/pizza-order/
 
 _There are no servers needed to run this game_
 
