@@ -1,29 +1,15 @@
-pizza company
-
 choose one or more individual toppings
 choose a size
 order - see final cost
-
 pizza object constructor
   properties for toppings and size
-
 prototype method for pizza cost depending on selections
 
 
 
-
-
-
-HTML NECESSITIES
-size selection - select boxes
-toppings selection - checkboxes
-submission/calculation button - button
-
-
-
-
-
-
+pizza.size
+pizza.toppings
+pizza.cost = pizza.size + pizza.toppings
 
 
 
