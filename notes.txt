@@ -1,0 +1,34 @@
+pizza company
+
+choose one or more individual toppings
+choose a size
+order - see final cost
+
+pizza object constructor
+  properties for toppings and size
+
+prototype method for pizza cost depending on selections
+
+
+
+
+
+
+HTML NECESSITIES
+size selection - select boxes
+toppings selection - checkboxes
+submission/calculation button - button
+
+
+
+
+
+
+
+
+
+
+stylize site
+order more than one pizza
+list of pizzas ordered as links that can be clicked for details
+offer delivery option with address information
