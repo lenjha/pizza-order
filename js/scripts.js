@@ -1,54 +1,54 @@
 //back-end
 // pizza object constructor
 function Pizza(size, toppings) {
-  this.size = 0;
-  this.toppings = 0;
+  this.size = "";
+  this.toppings = [];
+  this.cost = 0;
 }
-
-var sizeCost = function(){
-  //if size = small, 8
-  //if size = medium, 10
-  //if size = large, 12
-}
-
-var toppingsCost = function(){
-  //if toppingsArray.includes anchovies, replace indexOf anchovies with 3
-  //if toppingsArray.includes bacon, replace indexOf anchovies with 4
-  //if toppingsArray.includes cheese, replace indexOf anchovies with 2
-}
-
-
 
 
 //prototype method for pizza cost depending on selections
 Pizza.prototype.calculate = function() {
-  return this.size + this.toppings;
+  if (size = "small") {
+    this.cost += 8
+  } else if (size = "medium") {
+    this.cost += 10
+  } else {
+    this.cost += 12
+  }
+  if (this.toppings.includes(" eye of newt")) {
+    this.cost += 3
+  }
+  if (this.toppings.includes(" wing of bat")) {
+    this.cost += 4
+  }
+  if (this.toppings.includes(" slime of snail")) {
+    this.cost += 2
+  }
+  // alert(this.size + this.toppings);
 }
 
 //front-end
 $(document).ready(function() {
-  debugger;
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
-    var toppingsCost = [];
-
-    //STRINGS - toppings and size
-    var toppingsArray = [];
-    var toppingsStringArray = [];
+    var toppings = [];
     var size = $("#size").val();
+    var pizza = new Pizza(size, toppings)
 
     $("input:checkbox[name=toppings]:checked").each(function(){
       var toppingsSelected = $(this).val();
-      toppingsArray.push(toppingsSelected);
-      toppingsStringArray.push(" " + toppingsSelected);
-    }); //toppings checkbox checking
+      toppings.push(" " + toppingsSelected);
+    });
 
-    $("#results").append("<li>You ordered a " + size + " " + toppingsStringArray + " pizza! </li>")
+    pizza.calculate();
+
+
+    $("#results").append("<li>You ordered a " + size + " " + toppings + " pizza! </li>")
     $(".user-order").show();
 
-    var pizza = new Pizza(size, toppingsArray)
 
-    alert(toppingsArray);
+    alert(pizza.cost);
 
   }); //pizza-order submitted
 }); //document ready
