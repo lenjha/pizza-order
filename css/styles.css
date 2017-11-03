@@ -15,12 +15,14 @@
 }
 
 body {
-  background-color: #f7f5e6;
+  background: #662928;
+  /*background: url("img/circles.png") repeat 0 0;*/
   font-family: 'Kavivanar', cursive;
   list-style: none;
 }
 
 h3 {
+  margin-top: 22px;
   text-align: center;
 }
 
@@ -32,4 +34,14 @@ h3 {
 .toppings-alignment {
   padding: 10px;
   margin: 10px;
+}
+
+.info-card {
+  background-color: #f7f5e6;
+  padding: 10px;
+}
+
+.order-card {
+  background-color: #f7f5e6;
+  padding: 10px;
 }
