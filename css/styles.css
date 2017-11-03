@@ -1,3 +1,15 @@
+body {
+  background: linear-gradient(#874f4e, #4f1c1b);
+  /*background: url("img/circles.png"); WHY CAN'T THIS WORK REEEE*/
+  font-family: 'Kavivanar', cursive;
+  list-style: none;
+}
+
+h3 {
+  margin-top: 22px;
+  text-align: center;
+}
+
 .btn {
   background-color: black;
   border-color: red;
@@ -14,18 +26,6 @@
   display: none;
 }
 
-body {
-  background: #662928;
-  /*background: url("img/circles.png") repeat 0 0;*/
-  font-family: 'Kavivanar', cursive;
-  list-style: none;
-}
-
-h3 {
-  margin-top: 22px;
-  text-align: center;
-}
-
 .left-side {
   float: left;
   margin-right: 25px;
@@ -37,11 +37,15 @@ h3 {
 }
 
 .info-card {
-  background-color: #f7f5e6;
+  background-color: #c6c4b4;
   padding: 10px;
 }
 
 .order-card {
-  background-color: #f7f5e6;
+  background-color: #c6c4b4;
   padding: 10px;
+}
+
+.small-stuff {
+  color: white;
 }
