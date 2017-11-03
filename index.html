@@ -5,7 +5,7 @@
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
     <meta charset="utf-8">
     <title>ye olde zza shoppe</title>
   </head>
@@ -15,44 +15,100 @@
         <h1>Le Zza Shoppe</h1>
       </div> <!--jumbtron div-->
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-1">
         </div>
-        <div class="col-md-6">
-
-<!--SIZES-->
-          <form id="pizza-order">
-            <select class="form-control" id="size">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-            </select>
-
-<!--TOPPINGS-->
-            <div class="form-group">
-              <br>Toppings From Which to Choose~<br>
-              <input type="checkbox" name="toppings" value="eye of newt"> eye of newt<br>
-              <input type="checkbox" name="toppings" value="wing of bat"> wing of bat <br>
-              <input type="checkbox" name="toppings" value="slime of snail"> slime of snail <br>
-            </div>
-
-<!--SUBMIT BUTTON-->
-            <button type="submit" class="btn" id="order-btn">Order Up!</button>
-          </form> <!--pizza-order-->
+        <div class="col-md-10">
+          <p>After much deliberation amongst the elders, the council has at long last decreed it acceptable to offer our services online for easier accessiblity among our clientele.  Having been in the family business for generations, we pride ourselves in serving the finest of 'pizza' with the best intentions.</p>
+          <br>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-1">
         </div>
-      </div> <!--row div-->
+      </div>
       <div class="row">
         <div class="col-md-2">
         </div>
-        <div class="col-md-8 user-order">
+        <div class="col-md-8 pizza-order-form">
+          <h3>Order Below</h3>
+<!--SIZES-->
+          <form id="pizza-order">
+            <label>Size of the 'pizza'</label>
+            <select class="form-control" id="size">
+              <option value="an oca">Oca</option>
+              <option value="a baniţă">Baniţă</option>
+              <option value="a feredelă">Feredelă</option>
+            </select>
+<!--TOPPINGS-->
+            <div class="form-group">
+              <br>Components From Which to Choose~<br>
+              <div class="toppings-alignment">
+                <div class="left-side">
+                  <input type="checkbox" name="toppings" value="eye of newt"> Eye of Newt<br>
+                  <input type="checkbox" name="toppings" value="wing of bat"> Wing of Bat <br>
+                  <input type="checkbox" name="toppings" value="slime of snail"> Slime of Snail <br>
+                  <input type="checkbox" name="toppings" value="hen's tooth"> Hen's Tooth <br>
+                  <input type="checkbox" name="toppings" value="dragon's tongue"> Dragon's Tongue <br>
+                  <input type="checkbox" name="toppings" value="howlet's wing"> Howlet's Wing <br>
+                  <input type="checkbox" name="toppings" value="wool of bat"> Wool of Bat <br>
+                  <input type="checkbox" name="toppings" value="toe of frog"> Toe of Frog <br>
+                  <input type="checkbox" name="toppings" value="root of hemlock"> Root of Hemlock
+                  <!-- <input type="checkbox" name="toppings" value="datura"> Datura <br> -->
+                </div>
+                <div class="right-side">
+                  <input type="checkbox" name="toppings" value="gall of goat"> Gall of Goat <br>
+                  <input type="checkbox" name="toppings" value="liver of a blasphemer"> Liver of a Blasphemer <br>
+                  <input type="checkbox" name="toppings" value="rosewater"> Rosewater <br>
+                  <input type="checkbox" name="toppings" value="tongue of dog"> Tongue of Dog <br>
+                  <input type="checkbox" name="toppings" value="adder's fork"> Adder's Fork <br>
+                  <input type="checkbox" name="toppings" value="blindworm's sting"> Blind-Worm's Sting <br>
+                  <input type="checkbox" name="toppings" value="turkey's nose"> Turkey's Nose <br>
+                  <input type="checkbox" name="toppings" value="crow feathers"> Crow Feathers <br>
+                  <input type="checkbox" name="toppings" value="snakeskin"> Snakeskin <br>
+                  <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni <br>
+                </div>
+              </div>
+            </div>
+<!--OTHER OPTIONS-->
+            <div class="form-group">
+              <br>Other Specifications<br>
+              <input type="checkbox" name="other-things" value="wormwood"> Wormwood<br>
+              <input type="checkbox" name="other-things" value="chanted"> Chanted<br>
+              <input type="checkbox" name="other-things" value="moonlit"> Moonlit<br>
+            </div>
+<!--DELIVERY OPTIONS-->
+            <label>Delivery Options</label>
+            <select class="form-control" id="delivery">
+              <option value="pigeon">Carrier Pigeon</option>
+              <option value="owl">Owl Mail</option>
+              <option value="broomstick">Broomstick</option>
+            </select>
+<!--SUBMIT BUTTON-->
+            <br><button type="submit" class="btn" id="order-btn">Order Up!</button>
+          </form> <!--pizza-order-->
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div> <!--row div-->
+
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 user-order">
           <br>
           <h3>Your Order:</h3>
           <span id="results"></span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4">
         </div>
       </div> <!--row2 div-->
+
+      <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4">
+          <p>Papers available upon request!</p>
+        </div>
+      </div>
+
     </div> <!--container div-->
   </body>
 </html>
