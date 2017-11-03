@@ -2,10 +2,9 @@
 // pizza object constructor
 function Pizza(size, toppings) {
   this.size = "";
-  this.toppings = [];
+  this.toppings = toppings;
   this.cost = 0;
 }
-
 
 //prototype method for pizza cost depending on selections
 Pizza.prototype.calculate = function() {
@@ -25,7 +24,7 @@ Pizza.prototype.calculate = function() {
   if (this.toppings.includes(" slime of snail")) {
     this.cost += 2
   }
-  // alert(this.size + this.toppings);
+  return this.cost
 }
 
 //front-end
